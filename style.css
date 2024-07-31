@@ -25,3 +25,8 @@ img:hover {
     justify-content: center;
     align-items: center;
 }
+
+#raposa {
+    display: flex;
+    
+}
