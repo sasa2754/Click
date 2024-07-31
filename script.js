@@ -1,12 +1,21 @@
-const num = document.getElementById("contador")
-const botao = document.getElementById("butao")
-let contador = 0;
+const contador = document.getElementById("contador");
+const panda = document.getElementById("panda");
+const raposa = document.getElementById("raposa");
+let num = 0;
 
-botao.addEventListener("click", () => {
+let larguraTela = window.innerWidth;
+let alturaTela = window.innerHeight;
+// console.log(`Largura: ${larguraTela}\nAltura: ${alturaTela}`)
+
+function numAleatorio () {
+    return Math.floor(Math.random() * (larguraTela - alturaTela + 1)) + alturaTela;
+}
+
+panda.addEventListener("click", () => {
     // alert("");
     contador += 1;
-    num.textContent = "Clicks: " + contador;
-    if (contador == 50) {
+    contador.textContent = "Clicks: " + num;
+    if (num == 50) {
         
     }
 });
